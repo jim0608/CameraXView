@@ -1,0 +1,11 @@
+package com.example.cameraxview.camera_view
+
+import com.example.cameraxview.camera_view.YUV420spAnalyzeBean
+
+interface CameraCallback {
+    /**
+     * 返回nv21预览数据
+     * @param analyzeBean 预览帧画面相关数据实体
+     */
+    fun cameraPreviewFrame(analyzeBean: YUV420spAnalyzeBean)
+}
